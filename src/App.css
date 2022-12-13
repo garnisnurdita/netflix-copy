@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.big {
+  /* background-color: gray; */
+  /* background-image: url("../public/my-id-gangnam-beauty-background.webp"); */
+  height: 700px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.big-img {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.row div {
+  /* background-color: gray; */
+  /* border: 5px solid black; */
+  width: 400px;
+  height: 200px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.row div:last-child {
+  margin-right: 0;
+}
+
+.row div img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  width: 100%;
+  padding: 0 60px;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e5e5e5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h2 {
+  color: red;
 }
